@@ -1223,6 +1223,8 @@ type VirtualHardwareItem struct {
 	Connection          []*VirtualHardwareConnection   `xml:"Connection,omitempty"`
 	HostResource        []*VirtualHardwareHostResource `xml:"HostResource,omitempty"`
 	Link                []*Link                        `xml:"Link,omitempty"`
+	// Reference: https://code.vmware.com/apis/287/vcloud?h=Director#/doc/doc/operations/GET-DisksRasdItemsList-vApp.html
+	Parent int `xml:"Parent,omitempty"`
 }
 
 // Connection info from ResourceType=10 (Network Interface)
